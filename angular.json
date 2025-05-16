@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "FBI": {
+    "PapaskOS": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/fbi",
+            "outputPath": "dist/PapaskOS",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "FBI:build:production"
+              "buildTarget": "PapaskOS:build:production"
             },
             "development": {
-              "buildTarget": "FBI:build:development"
+              "buildTarget": "PapaskOS:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "FBI:build"
+            "buildTarget": "PapaskOS:build"
           }
         },
 
@@ -117,11 +117,11 @@
         "cypress-run": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "FBI:serve"
+            "devServerTarget": "PapaskOS:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "FBI:serve:production"
+              "devServerTarget": "PapaskOS:serve:production"
             }
           }
         },
@@ -137,14 +137,14 @@
         "ct": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "FBI:serve",
+            "devServerTarget": "PapaskOS:serve",
             "watch": true,
             "headless": false,
             "testingType": "component"
           },
           "configurations": {
             "development": {
-              "devServerTarget": "FBI:serve:development"
+              "devServerTarget": "PapaskOS:serve:development"
             }
           }
         },
@@ -152,13 +152,13 @@
         "e2e": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "FBI:serve",
+            "devServerTarget": "PapaskOS:serve",
             "watch": true,
             "headless": false
           },
           "configurations": {
             "production": {
-              "devServerTarget": "FBI:serve:production"
+              "devServerTarget": "PapaskOS:serve:production"
             }
           }
         }

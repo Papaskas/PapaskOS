@@ -42,6 +42,7 @@ testem.log
 Thumbs.db
 
 TODO.md
+.qodo
 
 # Yarn
 .yarn/cache/

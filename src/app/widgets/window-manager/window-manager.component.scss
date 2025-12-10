@@ -1,4 +1,4 @@
-@use 'variables' as vars;
+@use '../../../sass/variables' as vars;
 
 .window-manager {
   background-color: vars.$Black2;
@@ -18,6 +18,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    p {
+      margin: 0;
+    }
   }
 
   &__close {

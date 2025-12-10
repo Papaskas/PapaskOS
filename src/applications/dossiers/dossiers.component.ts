@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { WindowManagerComponent } from '../window-manager/window-manager.component';
+import { WindowManagerComponent } from '@widgets/window-manager/window-manager.component';
 
 @Component({
   selector: 'app-dossiers',
